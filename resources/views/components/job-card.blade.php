@@ -1,17 +1,17 @@
-<div class="p-3 bg-white/10 rounded-xl flex flex-col text-center">
+<x-panel class="flex flex-col text-center">
     <div class="self-start text-xl">Microsoft</div>
     <div class="py-5">
-        <h3>Programador</h3>
-        <p>Período integral - R$6500,00</p>
+        <h3 class="group-hover:text-blue-600 text-xl font-bold transition-colors duration-300">Programador</h3>
+        <p class="text-sm mt-2">Período integral - R$6500,00</p>
     </div>
 
     <div class="flex justify-between items-center mt-auto">
         <div>
-            <x-tag>Categoria</x-tag>
-            <x-tag>Categoria</x-tag>
-            <x-tag>Categoria</x-tag>
+            <x-tag size="small">BackEnd</x-tag>
+            <x-tag size="small">FrontEnd</x-tag>
+            <x-tag size="small">TechLead</x-tag>
         </div>
 
-        <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
+        <x-employer-logo :width="42"/>
     </div>
-</div>
+</x-panel>
